@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/automation101/CICD/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/automation101/CICD/static/js/main.63ee510f.chunk.js",
+    "main.js.map": "/automation101/CICD/static/js/main.63ee510f.chunk.js.map",
+    "runtime-main.js": "/automation101/CICD/static/js/runtime-main.ab829eb0.js",
+    "runtime-main.js.map": "/automation101/CICD/static/js/runtime-main.ab829eb0.js.map",
+    "static/js/2.77d64701.chunk.js": "/automation101/CICD/static/js/2.77d64701.chunk.js",
+    "static/js/2.77d64701.chunk.js.map": "/automation101/CICD/static/js/2.77d64701.chunk.js.map",
+    "index.html": "/automation101/CICD/index.html",
+    "precache-manifest.b74968bae279e5ad517af32c410d2c02.js": "/automation101/CICD/precache-manifest.b74968bae279e5ad517af32c410d2c02.js",
+    "service-worker.js": "/automation101/CICD/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/automation101/CICD/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.77d64701.chunk.js.LICENSE.txt": "/automation101/CICD/static/js/2.77d64701.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab829eb0.js",
+    "static/js/2.77d64701.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.63ee510f.chunk.js"
+  ]
+}
