@@ -1,15 +1,20 @@
-# install dependencies
-# build react-app into build/ folder
-FROM node:10-alpine AS build
-WORKDIR /usr/src/app
-RUN npm install -g yarn
-COPY package*.json ./
-RUN yarn install
-COPY . .
-ARG REACT_APP_ENVIRONMENT
-RUN yarn build
-# move build folder to nginx
-# run nginx to server static files
-FROM nginx:stable
-COPY --from=build /usr/src/app/build/ /var/www
-COPY ./deploy/nginx.conf /etc/nginx/conf.d/default.conf
+FROM node:11.1.0-alpine as build
+
+WORKDIR /app
+
+COPY package*.json /app/
+
+RUN npm install
+
+COPY ./ /app/
+
+RUN npm run build
+
+FROM nginx:1.15.8-alpine
+
+COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/nginx/nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 80
+
+ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
