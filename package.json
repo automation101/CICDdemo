@@ -17,7 +17,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "node test/all.js",
+    "test": "cd packages/react-scripts && node bin/react-scripts.js test",
     "eject": "react-scripts eject"
     
   },
